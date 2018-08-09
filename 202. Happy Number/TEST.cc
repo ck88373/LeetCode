@@ -7,8 +7,13 @@ TEST_CASE("Remove Dup", "RemoveDup")
     Solution s;
 
 //    vector<int> v1{2,2,1};
-    REQUIRE( (s.countPrimes(10) == 4) );
+    REQUIRE( (s.isHappy(19) == true) );
     
+    REQUIRE( (s.isHappy(1) == true) );
+    
+    REQUIRE( (s.isHappy(0) == false) );
+    
+    REQUIRE( (s.isHappy(100) == true) );
     
     
 

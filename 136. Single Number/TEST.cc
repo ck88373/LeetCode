@@ -6,14 +6,11 @@ TEST_CASE("Remove Dup", "RemoveDup")
 {
     Solution s;
 
-//    vector<int> v1{2,2,1};
-    REQUIRE( (s.countPrimes(10) == 4) );
-    
-    
-    
+    vector<int> v1{2,2,1};
+    REQUIRE( (s.singleNumber(v1) == 1) );
 
-//    vector<int> v2{4,1,2,1,2};
-//    REQUIRE( (s.singleNumber(v2) == 4) );
+    vector<int> v2{4,1,2,1,2};
+    REQUIRE( (s.singleNumber(v2) == 4) );
 //
 //    vector<int> v3{1,3,5,6};
 //    REQUIRE( (s.searchInsert(v3,7) == 4) );
